@@ -14,7 +14,9 @@ Features:
 - [Node.js](https://nodejs.org) 18+ and npm
 - [Ollama](https://ollama.com) installed and running
 
-## 1. Install Ollama
+## Quick Setup
+
+### 1. Install Ollama
 
 - **macOS**: download from [ollama.com/download](https://ollama.com/download), or `brew install ollama`
 - **Linux**: `curl -fsSL https://ollama.com/install.sh | sh`
@@ -26,7 +28,7 @@ Start the Ollama server (skip if the installer already runs it as a background s
 ollama serve
 ```
 
-## 2. Pull a model
+### 2. Pull a model
 
 In a separate terminal, pull at least one model:
 
@@ -36,7 +38,7 @@ ollama pull llama3
 
 Browse other available models at [ollama.com/library](https://ollama.com/library). Any pulled model will show up in this app's model picker.
 
-## 3. Install and run this app
+### 3. Install and run this app
 
 ```bash
 npm install
@@ -45,7 +47,7 @@ npm run dev
 
 Open the URL Vite prints (usually `http://localhost:5173`).
 
-## CORS
+#### CORS
 
 By default Ollama only accepts requests from its own origin, so the browser may report a network/CORS error reaching `http://localhost:11434`. Restart Ollama with the dev origin allowed:
 
